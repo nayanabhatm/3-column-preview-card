@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --light-gray: hsl(0, 0%, 95%);
+  --big-shoulders-fonts: "Big Shoulders Display", cursive;
+  --lexend-fonts: "Lexend Deca", sans-serif;
+}
+
+body {
+  margin: 13%;
+  background-color: var(--light-gray);
+}
+
+p {
+  font-size: 1rem;
+  font-family: var(--lexend-fonts);
+  color: var(--transparent-white);
+  font-weight: 400;
+}
+
+h1 {
+  color: var(--light-gray);
+  font-family: var(--big-shoulders-fonts);
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--light-gray);
+  padding: 5% 10%;
+  border-radius: 32px;
+  margin: 10% 0 0 0;
+  border: none;
+}
+
+.content > * {
+  padding: 15% 10%;
+}
+
+/* Sedans */
+.sedan {
+  border-radius: 12px 12px 0 0;
+  background-color: var(--orange);
+}
+
+.sedan > button {
+  color: var(--orange);
+}
+
+/* Suvs */
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.suvs > button {
+  color: var(--dark-cyan);
+}
+
+/* Luxury */
+.luxury {
+  border-radius: 0 0 12px 12px;
+  background-color: var(--very-dark-cyan);
+}
+
+.luxury > button {
+  color: var(--very-dark-cyan);
+}
+
+/* Media queries */
+
+@media screen and (min-width: 700px) {
+  body {
+    margin: 20%;
+    overflow: hidden;
+  }
+
+  p {
+    margin: 15% 10% 20% 0;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .content > * {
+    padding: 7% 5% 5% 5%;
+  }
+
+  /* Sedans */
+  .sedan {
+    border-radius: 12px 0 0 12px;
+    background-color: var(--orange);
+  }
+
+  /* Suvs */
+  .suvs {
+    background-color: var(--dark-cyan);
+  }
+
+  /* Luxury */
+  .luxury {
+    border-radius: 0 12px 12px 0;
+    background-color: var(--very-dark-cyan);
+  }
+}
