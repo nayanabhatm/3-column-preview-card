@@ -4,7 +4,7 @@
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://nayanabhatm.github.io/3-column-preview-card/
 
 ### Built with
 
